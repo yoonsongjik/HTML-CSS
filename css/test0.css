@@ -1,0 +1,74 @@
+/*제목 ->.profile 부분 : .붙이기
+.profile이란 이름으로 호출
+*/
+.profile
+{
+    width: 100px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.style
+{
+    color : red;
+    width : 100 ;
+    margin-left : 100;
+    display: block;
+    font-weight : 900;
+}
+/*p태그의 스타일 지정, 태그셀렉터*/
+p{
+    text-align:center
+}
+/*아이디에 넣는법 - java로 개발할때 사용, id셀렉터*/
+#special{
+    text-align:center
+}
+/*
+css경우 스타일이 겹칠경우 우선순위
+style > id셀렉터 > class > tag셀렉터
+*/
+
+.box{
+    width: 100px;
+    height: 100px;
+    color : white;
+    background-color: black;/*background-color or background*/
+    margin : 30px;
+    padding : 40px; /*안쪽여백*/
+    border : 4px solid red; /*테두리, 종류, 색*/
+    border-radius : 5px; /*테두리 모서리*/
+    display : block;/*박스는 블록 생략가능
+                        가로행을 전부 차지*/
+    margin-left : auto;
+    margin-right : auto;
+    font-size : 10px;
+    box-shadow : 5px 5px blue;
+}
+.container{
+    width:800px;
+}
+.header{
+    width:100%;
+    height:50px;
+    background : aquamarine;
+}
+.left-menu{
+    width:20%;
+    height : 400px;
+    background : cornflowerblue;
+    float:left;
+}
+.content{
+    width:80%;
+    height : 400px;
+    background : coral;
+    float:left;
+}
+.footer{
+    width:100%;
+    height : 100px;
+    background : grey;
+    clear:both;
+    /*clear:both float다음에 오는 요소에 주면 해결하는것*/
+}
